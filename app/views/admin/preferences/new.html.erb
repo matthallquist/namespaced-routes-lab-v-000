@@ -1,0 +1,28 @@
+<h1>New Preferences</h1>
+
+<%= form_for @preference do |f| %>
+  <%= f.label :artist_sort_order %><br>
+  <label>ASC</label>
+  <input type="radio" name="artist_sort_order" value="ASC"><br>
+  <label>DESC</label>
+  <input type="radio" name="artist_sort_order" value="DESC"><br><br>
+
+  <%= f.label :song_sort_order %><br>
+  <label>ASC</label>
+  <input type="radio" name="song_sort_order" value="ASC"><br>
+  <label>DESC</label>
+  <input type="radio" name="song_sort_order" value="DESC"><br><br>
+
+  <%= f.label :allow_create_songs %><br>
+  <label>Yes</label>
+  <input type="radio" name="allow_create_songs" value="true"><br>
+  <label>No</label>
+  <input type="radio" name="allow_create_songs" value="false"><br><br>
+
+  <%= f.label :allow_create_artists %><br>
+  <label>Yes</label>
+  <input type="radio" name="allow_create_artists" value="true"><br>
+  <label>No</label>
+  <input type="radio" name="allow_create_artists" value="false"><br><br>
+  <%= f.submit %>
+<% end %>

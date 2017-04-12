@@ -1,0 +1,11 @@
+<h1>Current Preferences:</h1>
+
+<%= @preference.artist_sort_order %>
+
+<%= @preference.song_sort_order %>
+
+<%= @preference.allow_create_songs %>
+
+<%= @preference.allow_create_artists %>
+
+<%= link_to 'New Preferences', new_preference_path %>
